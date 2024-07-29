@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="/static/stylesheets/home.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <title>X-tray Dashboard</title>
+        <link rel="shortcut icon" href="/static/images/logo.png">
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg bg-transparent navbar-light">
+            <div class="container">
+                <!-- App name-->
+                <a href="#" class="navbar-brand">X-tray</a>
+
+                <!-- Toggle button -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu options -->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="/start-scan" class="nav-link">Try it out</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#how-it-works" class="nav-link">How it works</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#contributing-and-deploying" class="nav-link">Contributing & Deploying</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#faq" class="nav-link">FAQ's</a>
+                        </li>
+                    </ul>
+                </div>
+            <div>
+        </nav>
+
+        <!-- Main section -->
+        <div class="container">
+            <div class="row align-items-center h-100">
+                <!-- Main page text -->
+                <div class="col" data-aos="fade-down">
+                    <h1>Making the world a better place, <span class="text-warning">one xray and a life at a time</span></h1>
+                    <p>
+                        Currently a cutting-edge X-ray diagnostic tool, our project’s future is set on evolving into a full-fledged triage system. By advancing AI capabilities, we aim to provide hospitals across India with a seamless, cost-effective solution for patient triage
+                    </p>
+                    <a href="#how-it-works" class="button">Learn more</a>
+                    <a href="/start-scan" class="button">Try it out</a>
+                </div>
+
+                <!-- Main page image -->
+                <div class="col">
+                    <img class="img-fluid landing-image" src="/static/images/landing-image.png" data-aos="fade-left" data-aos-delay="300">
+                </div>
+            </div>
+        </div>
+
+        <!-- How it works -->
+        <div class="container" id="how-it-works">
+            <div class="row align-items-center h-100">
+                <div class="col">
+                    <img class="img-fluid landing-image" src="/static/images/how-it-works.png" data-aos="fade-right" data-aos-delay="300">
+                </div>
+
+                <div class="col" data-aos="fade-down">
+                    <h3>How it works</h3>
+                    <hr>
+                    <p>
+                        The xray is analyzed by a pretrained convolutional neural network trained on a combination of these datasets:
+                        <a href="https://www.kaggle.com/nih-chest-xrays/data">NIH</a>,
+                        <a href="https://www.kaggle.com/c/rsna-pneumonia-detection-challenge/data">RSNA</a>,
+                        <a href="https://stanfordmlgroup.github.io/competitions/chexpert/">CheXpert</a>,
+                        <a href="https://mimic.mit.edu/docs/gettingstarted/">Mimic-CXR</a> and
+                        <a href="https://bimcv.cipf.es/bimcv-projects/padchest/">PadChest</a>.
+                        The AI then runs the image through a neural network which predicts the probabilities of each disease.
+                        To view the source code or view the code, read <a href="#contributing-and-deploying">this</a>,
+                        or if you wish to test out the AI, you can click <a href="/start-scan">here</a> to visit the start doing a scan.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contributing and deploying -->
+        <div class="container" id="contributing-and-deploying">
+            <div class="row align-items-center h-100">
+                <div class="col" data-aos="fade-down">
+                    <h3>Contributing & Deploying</h3>
+                    <hr>
+                    <p>
+                        Welcome to our project!
+
+                        This website showcases the potential of AI systems in analyzing X-rays, demonstrating that with time and rigorous training, AI can significantly aid in triaging patients. Our goal is to provide a cost-effective triage solution for hospitals across India, especially in areas where specialized medical staff might be scarce.
+
+                        By leveraging AI, we aim to streamline the triage process, improving efficiency and accuracy without the need for additional staff. This initiative is designed to support healthcare facilities in delivering timely and effective care, ultimately benefiting patients and the healthcare system as a whole.
+
+                        This project is created by Prakhar Biswas, who is passionate about advancing healthcare through innovative technology. We believe that with the continued development of AI technologies, we can make a meaningful impact on healthcare accessibility and quality.
+
+                        Thank you for joining us on this journey to enhance medical triage through cutting-edge AI solutions.
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- FAQ's -->
+        <div class="container" id="faq">
+            <div class="row align-items-center h-100">
+                <div class="col" data-aos="fade-down">
+                    <!-- Title -->
+                    <h3>FAQ's</h3>
+                    <hr>
+
+                    <!-- Accordion -->
+                    <div class="accordion" id="accordion">
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1">
+                                    Is this app meant to replace human doctors?
+                                </button>
+                            </h2>
+
+                            <div class="accordion-collapse collapse" id="collapse-1" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    Nope, this project does not aim to completely replace doctors. It is just a mere companion
+                                    to assist doctors in diagnosing and treating a patient.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2">
+                                    Can the AI predict better than humans?
+                                </button>
+                            </h2>
+
+                            <div class="accordion-collapse collapse" id="collapse-2" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    The average human radiologist <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5265198">have error rates of upto 5%</a>.
+                                    With sufficient data supplied into the AI's dataset, it can theoretically reach and surpass a human's accuracy. Even if it does
+                                    not reach such high accuracy levels, it can still be used to aid humans.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3">
+                                    What all conditions can this app diagnose?
+                                </button>
+                            </h2>
+
+                            <div class="accordion-collapse collapse" id="collapse-3" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    This project can diagnose the following: Atelectasis, Consolidation, Inflitration,
+                                    Pneumothorax, Edema, Emphysema, Fibrosis, Effusion, Pneumonia, Pleural Thickening,
+                                    Cardiomegaly, Nodule, Mass, Hernia, Lung Lesion, Fractures, Lung Opacity and
+                                    Enlarged Cardiomediastinum.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6">
+                                    How can patients use this application?
+                                </button>
+                            </h2>
+
+                            <div class="accordion-collapse collapse" id="collapse-6" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    Currently, this app aims to assist healthcare workers only, however, the code can be tweaked to
+                                    allow patients to view the results which has been analysed by their doctors.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7">
+                                    What is the future of this app?
+                                </button>
+                            </h2>
+
+                            <div class="accordion-collapse collapse" id="collapse-7" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    The future of this app involves expanding its AI capabilities to enhance accuracy and efficiency in triaging X-rays, and scaling its deployment to support more hospitals across India. Long-term, it aims to integrate seamlessly into healthcare systems, improving patient care and accessibility.
+
+                                </div>
+                            </div>
+                        </div>                        
+
+                        <!-- FAQ 8 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8">
+                                    Why has this app been made?
+                                </button>
+                            </h2>
+
+                            <div class="accordion-collapse collapse" id="collapse-8" data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    The future of this app involves expanding its AI capabilities to enhance accuracy and efficiency in triaging X-rays, and scaling its deployment to support more hospitals across India. Long-term, it aims to integrate seamlessly into healthcare systems, improving patient care and accessibility.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="/static/scripts/home.js"></script>
+    </body>
+</html>

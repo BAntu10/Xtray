@@ -1,5 +1,5 @@
 <h2 align="center">
-    <img src="https://github.com/BAntu10/Xtray/raw/master/static/images/logo.png" align="center" width="50">
+    <img src="https://github.com/BAntu10/Xtray/blob/main/static/images/logo.png" align="center" width="50">
     Xtray
 </h2>
 
